@@ -9,13 +9,7 @@ namespace LinqExercise
         public int Age { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName
-        {
-            get
-            {
-                return $"{FirstName} {LastName}";
-            }
-        }
+        public string FullName => $"{FirstName} {LastName}";
         public int YearsOfExperience { get; set; }
 
         public Employee(string firstName, string lastName, int age, int yearsOfExperience)
@@ -24,11 +18,6 @@ namespace LinqExercise
             LastName = lastName;
             Age = age;
             YearsOfExperience = yearsOfExperience;
-        }
-        
-        public Employee()
-        {
-            
         }
     }
 }
